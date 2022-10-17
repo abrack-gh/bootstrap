@@ -7,7 +7,12 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class BootstrapApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BootstrapApplication.class, args);
-	}
+		try {
+			SpringApplication.run(BootstrapApplication.class, args);
+		} catch(Exception e) {
+			e.printStackTrace();
+		}
+		}
+
 
 }
